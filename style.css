@@ -8,23 +8,42 @@ body {
     /* text-align: center; */
 }
 
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: lighter;
+}
+
 .input {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 input {
-    height: 40px;
-    width: 80%;
-    padding-left: 10px;
+    width: 50%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
-    background-color: rgb(255, 231, 239);
+    background-color: rgb(238, 238, 238);
     border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     /* margin-right: 10px; */
+    color: white;
+}
+
+input::placeholder {
+    color: rgb(54, 54, 54);
+}
+
+input:focus {
+    outline: none;
 }
 
 button {
@@ -32,7 +51,7 @@ button {
     border: none;
     border-radius: 5px;
     padding: 10px;
-    
+    background-color: salmon;
 }
 
 #output img{
@@ -47,16 +66,20 @@ button {
 
     input {
         margin-bottom: 20px;
+        width: 70%;
     }
 }
 
 @media (max-width: 330px) {
+    h1 {
+        font-size: 30px;
+    }
     .input {
         flex-direction: column;
     }
 
     input {
         margin-bottom: 20px;
-        /* width: 220px; */
+        width: 80%;
     }
 }
